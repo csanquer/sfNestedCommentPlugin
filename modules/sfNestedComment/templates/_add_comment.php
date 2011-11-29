@@ -11,6 +11,7 @@
   <h3 id="replay-title"><?php echo __('Leave a reply') ?>&nbsp;<small><a href="#respond" id="cancel-comment-reply-link">Cancel Reply</a></small></h3>
   <form action="<?php echo url_for('@sf_nested_commend_add') ?>" name='add_comment' class='add_comment' id='sfNestedComment_add_comment_form' method="post">
     <?php echo $commentForm ?>
+    <?php echo $commentForm->renderHiddenFields(false) ?>
     <div class="form-submit">
       <input type="submit" value="<?php echo (__('Submit comment')) ?>" id="sumbit-comment" />
       <?php if($use_ajax): ?>
