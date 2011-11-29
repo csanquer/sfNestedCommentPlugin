@@ -1,4 +1,4 @@
-<?php use_helper('Date') ?>
+<?php use_helper('Date', 'I18N') ?>
 <div id="comment-<?php echo $comment->getId() ?>">
   <div class="comment-author">
     <?php if (sfNestedCommentConfig::isGravatarEnabled()): ?>
